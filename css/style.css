@@ -87,3 +87,9 @@ a {
 p{
   font-size: 2rem;
 }
+
+.pdf{
+  color: #f62982;
+  font-size: medium;
+  font-weight: normal;
+}
