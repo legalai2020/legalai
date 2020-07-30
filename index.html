@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-default" role="navigation"></nav>
@@ -45,28 +46,22 @@
 <div style="text-align:left;width:60%;height:5%;margin: 0 auto;padding-top: 30px">
 	<p style="text-align:justify">
 		<span class="label label-info" style="float: revert">News:</span>
-<!--		<span style="font-weight:bold"> Workshop schedule is updated!</span>-->
-		<span>
-			<ul class="list-group">
-				<li class="list-group-item"> <span class="badge">new</span><span style="font-weight: bold;font-size: large">Workshop schedule is updated!</span></li>
-    			<li class="list-group-item">
-					<span class="badge">new</span>
-					<div class="list-group-item-heading">
-						<span style="font-weight: bold;font-size: large">We will start on July 30 8:30am GMT +8.</span>
-					</div>
-					<div class="list-group-item-text">
-						<a href="https://us04web.zoom.us/j/4197720080?pwd=ZTZ2dnlBZUtSbGFuY2VGc0hjWFgxQT09">Join Zoom Conference.</a>
-					</div>
-					<div class="list-group-item-text">
-						<span>Conference ID：419 772 0080</span>
-					</div>
-					<div class="list-group-item-text">
-						<span>Password：Q6W0VZ</span>
-					</div>
-				</li>
-			</ul>
-		</span>
+		<span style="font-weight:bold">The workshop video is uploaded for free downloading! We had a great workshop! Thank you very much for joining us! </span>
+		<a href="#" data-toggle="modal" data-target="#myModal" style="font-weight: normal;font-size: medium;font-style: italic">video</a>
 	</p>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" aria-hidden="true" onclick="close_video();">&times;</button>
+				<h4 class="modal-title" id="myModalLabel">LegalAI2020</h4>
+			</div>
+			<div class="modal-body">
+				<video id="legal_video" src="video/LegalAI2020.mp4" style="width: 100%" controls preload="auto"></video>
+			</div>
+		</div>
+	</div>
 </div>
 
 <div>
@@ -128,7 +123,7 @@
 		<li style="font-size: large;padding-top: 5px;font-weight: bold"><span>11:10 - 12:00AM : (each paper has 12 min)</span></li>
 		<li style="list-style:none">
 			<ul class="margin: 0 0 0 300px;">
-				<li style="font-size: large;padding-top: 5px;font-weight: bold">Paper Talk 4: Legal Artificial Intelligence : Have You Lost a Piece from Jigsaw Puzzle?</li>
+				<li style="font-size: large;padding-top: 5px;font-weight: bold">Paper Talk 4: Legal Artificial Intelligence : Have You Lost a Piece from Jigsaw Puzzle? <a href="file/XiaozhongLiu.pdf" style="font-weight: normal;font-size: medium">[PDF]</a></li>
 				<li style="font-size: large;"><span style="color: #f62982">Xiaozhong Liu</span></li>
 			</ul>
 			<ul class="margin: 0 0 0 300px;">
